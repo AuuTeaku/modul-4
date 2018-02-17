@@ -33,7 +33,7 @@ Dengan menggunakan topologi yang ada sebelumnya, hitung terlebih dahulu total al
 Total komputer / host yang ada di dalam topologi adalah 188. Oleh karena itu digunakan netmask /24 karena dengan netmask tersebut, jumlah 188 bisa tertampung semua. Selanjutnya subnet besar yang dibentuk memiliki NID 192.168.1.0 dengan netmask /24.
 
 Setelah itu lakukan subnetting dengan menggunakan pohon pembagian IP sesuai dengan pohon dibawah ini.
-![1](/assets/PohonVLSM.png)
+![1](/assets/PohonVLSM.PNG)
 
 Dari pohon di atas didapatkan pembagian IP sebagai berikut
 ![2](/assets/TabelVLSM.png)
