@@ -29,15 +29,14 @@ Dengan menggunakan topologi yang ada sebelumnya, hitung terlebih dahulu total al
     - A6 = 2 host
     - A7 = 10 host
     - A8 = 20 host
-    
-    <br>Total komputer / host yang ada di dalam topologi adalah 188. Oleh karena itu digunakan netmask /24 karena dengan netmask tersebut, jumlah 188 bisa tertampung semua. Selanjutnya subnet besar yang dibentuk memiliki NID 192.168.1.0 dengan netmask /24.
 
-    <br>Setelah itu lakukan subnetting dengan menggunakan pohon pembagian IP sesuai dengan pohon dibawah ini.<br>
-    ![1](/assets/PohonVLSM.png)
+Total komputer / host yang ada di dalam topologi adalah 188. Oleh karena itu digunakan netmask /24 karena dengan netmask tersebut, jumlah 188 bisa tertampung semua. Selanjutnya subnet besar yang dibentuk memiliki NID 192.168.1.0 dengan netmask /24.
 
-    <br> Dari pohon di atas didapatkan pembagian IP sebagai berikut<br>
-    ![2](/assets/TabelVLSM.png)
+Setelah itu lakukan subnetting dengan menggunakan pohon pembagian IP sesuai dengan pohon dibawah ini.
+![1](/assets/PohonVLSM.png)
 
+Dari pohon di atas didapatkan pembagian IP sebagai berikut
+![2](/assets/TabelVLSM.png)
 
 <b>2. CIDR (Classless Inter Domain Routing)</b>
 Perhitungan pada teknik CIDR didasarkan pada jumlah komputer / host yang ada di dalam subnet. Tetapi cara mendapatkan subnet besar tidak sama dengan VLSM. Berikut langkah-langkahnya:<br>
