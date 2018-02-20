@@ -65,3 +65,11 @@ Dari hasil penghitungan didapatkan pembagian IP sebagai berikut.
 
 Jika kalian menggunakan CIDR maka netmask yang terbentuk akan menjadi lebih besar dibandingkan dengan menggunakan VLSM. Tetapi teknik CIDR tetap memiliki keunggulan, salah satunya adalah ketika muncul subnet baru di dalam topologi, tidak perlu dilakukan penghitungan lagi karena masih ada beberapa IP yang tidak terpakai. Keunggulan lainnya dari teknik CIDR ini adalah kemudahan dalam proses <i>routing</i>. Tabel routing pada teknik CIDR akan lebih simpel daripada dengan teknik VLSM. 
 ## ROUTING
+### Pengertian
+Setelah mengetahui cara menghitung <b>Subnet</b> suatu jaringan dan metode pembagian IP, ada satu hal lagi yang perlu kalian ketahui yaitu <b>ROUTING</B>.
+
+Dalam perkembangan dunia jaringan muncul banyak protokol routing yang sudah memudahkan setiap administrator jaringan. Protokol routing ini membuat tabel routing dapat di-update tanpa campur tangan manusia. Istilah yang digunakan untuk teknik ini adalah <b>routing dinamis</b>.
+
+Beberapa protokol terkenal antara lain RIP, RIP versi 2, EIGRP, dan OSPF. Namun dalam modul ini tidak dijelaskan bagaimana mengkonfigurasikan jaringan dengan protokol tersebut, jika kalian ingin mengetahui lebih lanjut mengenai <b>Routing dinamis</b> kalian bisa mengambil kuliah <b>TAJ</b> pada semester 6 nanti.
+
+Yang dibahas di modul ini adalah <b>Routing static</b>, tipe routing ini mengharuskan administrator jaringan menambahkan rute(<b>route</b>) baru ke dalam tabel routing ketika ada tambahan subnet di dalam jaringannya. Konsep routing static sangat sederhana, daftar NID dan netmask yang ada serta tentukan gateway untuk menuju ke subnet tersebut. Untuk mencoba teknik routing static ini, kita akan menggunakan aplikasi <b>Cisco Packet Tracer</b> yang sudah diinstall sebelumnya.
