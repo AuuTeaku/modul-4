@@ -1,9 +1,100 @@
 # SUBNETTING & ROUTING
 
-## PENGELALAN
+## A. PENGENALAN
+*gambar*
 
-## SUBNETTING
+Apa yang dimaksud dengan netmask, address, dan gateway dari gambar di atas?
+
+#### Istilah
+Istilah | Penjelasan
+--------|-----------
+iface | Disebut network interface, antarmuka yang menghubungkan 2 layer protokol. Setiap interface memiliki nama yang berbeda
+eth0 | Salah satu nama interface yang digunakan untuk berhubungan dengan subnet
+address | Sebuah alamat IP unik bagi komputer dalam sebuah jaringan
+netmask | Kombinasi angka-angka sepanjang 32 bit yang berfungsi membagi IP ke dalam subnet-subnet dan menentukan rentang alamat IP pada subnet yang bisa digunakan
+gateway | Alamat IP pintu keluar menuju jaringan lain, biasanya diisi alamat IP router terdekat
+
+<b>Mengapa Perlu Subnetting?</b>
+
+Sebagaimana rumah yang memiliki alamat masing-masing (unique), setiap komputer dan device yang terhubung dengan jaringan harus memiliki alamat, yaitu berupa IP Address. Sebagai permisalan, wilayah di Indonesia perlu dibagi-bagi menjadi kota, kecamatan, dan desa. Mengapa demikian? Dengan alasan yang semisal, jaringan juga perlu dibagi menjadi subnet (sub-network).
+
+<b>Mengapa Perlu Routing?</b>
+
+Sebagai permisalan, ketika Anda ingin mengantar surat, Anda perlu mencantumkan alamat yang dituju pada surat itu sendiri. Kemudian Anda kirim ke kantor pos, lalu kantor pos akan mengirimkan ke alamat yang dituju. Bagaimana kantor pos mengirim surat tersebut?
+Tentu pak pos perlu mengetahui rute perjalan agar surat sampai ke tujuan, seperti itulah routing itu. Untuk mencapai IP Address, perlu diketahui rute untuk menuju IP Address yang dimaksud.
+
+### IP ADDRESS
+IP Address (Versi 4)
+
+- Alamat IP adalah suatu alamat unik yang diberikan untuk menandai sebuah komputer yang terhubung dalam suatu jaringan.
+- Alamat IP terdiri dari 32 bit biner yang dalam penulisannya dikonversi menjadi bilangan desimal.
+- Alamat IP (yang panjangnya 32 bit itu) dibagi menjadi 4 oktet (masing-masing oktet berisi 8 bit) dipisahkan dengan tanda titik.
+
+### Subnet
+*gambar subnet*
+    
+Apa yang dapat anda simpulkan dari tabel di atas?
+
+### Network ID, Broadcast Address, dan Available Hosts
+Jika suatu PC memiliki alamat 10.151.36.5/24, maka informasi yang dapat digali dari IP tersebut adalah:
+
+1. Alamat IP
+2. Netmask
+3. Network ID (NID) : Sebuah alamat IP yang menjadi identitas untuk suatu jaringan/subnet
+4. Broadcast Address : Sebuah alamat IP yang menjadi alamat untuk pengiriman pesan broadcast dalam suatu jaringan/subnet
+5. Available Hosts: Rentang alamat IP yang bisa digunakan dalam suatu jaringan/subnet
+
+Contoh skenario:
+    Carilah Network ID (NID), Broadcast Address dan rentang alamat IP dari IP 10.151.36.5/24!
+    
+Penyelesaian :
+    Informasi sementara yang didapat dari 10.151.36.5/24 adalah:
+    
+        1. IP : 10.151.36.5
+        2. Netmask : 255.255.255.0 (/24)
+        3. Network ID?
+        4. Broadcast Address?
+        5. Available Host?
+   
+   Berikut akan dijelaskan bagaimana mencari NID, Broadcast Address, dan Available Host:
+   
+#### Network ID
+Mencari Network ID (NID) :
+
+*gambar*
+
+#### Broadcast Address
+*gambar*
+
+#### Available Hosts
+Mencari Rentang Alamat IP:
+*gambar*
+
+### IP Publik dan IP Privat
+Alamat IP dibagi menjadi 2 jenis, yakni IP Publik dan IP Privat. Rentang IP Privat adalah:
+
+- 10.0.0.0/8 (IP Privat Kelas A)
+- 172.16.0.0/12 - 172.31.0.0/12 (IP Privat Kelas B)
+- 192.168.0.0/16 (IP Privat Kelas C)
+
+Sedangkan rentang IP Publik selain rentang IP Privat di atas.
+
+### Let’s Wrap and Warm Up!
+*gambar*
+    
+#### LATIHAN!
+Nah, sekarang coba kerjakan soal latihan di bawah ini dan silahkan diskusikan bersama asisten masing-masing.
+
+   1. Carilah Network ID, Broadcast Address dan rentang alamat IP dari 10.151.36.0/24
+   1. Carilah Network ID, Broadcast Address dan rentang alamat IP dari 172.16.1.27/29
+   1. Apakah IP 10.151.36.0/24 memiliki rentang IP yang sama dengan 10.151.36.5/24?
+   1. Apakah IP 10.151.36.0/24 dengan 10.151.36.5/24 bisa disebut sebagai satu subnet? Mengapa?
+   1. Apakah IP 10.151.34.14/24 dengan 10.151.36.5/24 bisa disebut sebagai satu subnet? Mengapa?
+   1. Kira-kira, bisakah IP yang berbeda subnet pada device yang berbeda saling berkomunikasi langsung tanpa perantara router?
+   
+## B. SUBNETTING
 ### Pengertian
+*gambar*
 
 <b>Subnet</b> adalah suatu sub jaringan dari jaringan yang lebih besar. Subnet diperlukan sebagai penanda suatu jaringan tertentu. Dengan adanya subnet, kita dapat melakukan manajemen suatu jaringan dengan lebih baik.
 
@@ -16,11 +107,36 @@ Contohnya :
 2. Laboratorium AJK memiliki jaringan dengan subnet 10.151.36.0/24
 
 ### Perhitungan Subnet
+Tujuan utama adanya subnetting ini adalah adanya pembagian alamat IP untuk kebutuhan tertentu. Sebagai contoh ketika terdapat sebuah perusahaan yang memiliki gedung dengan beberapa ruangan dan setiap ruangan memiliki banyak komputer yang harus dikonfigurasikan sedemikian rupa sehingga dapat saling berkomunikasi bahkan hingga dapat mengakses internet. Muncul lah salah satu konfigurasi paling dasar dalam penyelesaian permasalahan ini yaitu pembagian alamat IP untuk setiap ruangan yang ada di gedung perusahaan tersebut.
+
+Ada dua teknik pembagian IP yang dikenal dalam dunia jaringan, yaitu :
 #### A. Classfull
+Pembagian IP dengan menggunakan teknik ini didasarkan pada pembagian class pada alamat IP. Setiap subnet yang ada di dalam jaringan akan memiliki ukuran atau netmask sesuai ukuran yang ada di pembagian class, disesuaikan dengan jumlah komputer yang ada.
+
+class | Netmask | Jumlah Host
+------|---------|------------
+Class A | /8 | 4 Milyar
+Class B | /16 | 65536
+Class C | /24 | 256
+
+Tabel di atas menunjukkan netmask setiap class dan jumlah komputer yang bisa digunakan. Sebagai contoh pembagian IP dengan menggunakan metode classfull adalah sebagai berikut.
+
+*gambar topologi*
+
+Anggap kita memiliki topologi jaringan seperti pada gambar di atas. Kemudian tentukan jumlah subnet yang ada di dalam topologi tersebut.
+
+*gambar topologi*
+
+Ada 8 subnet di dalam topologi. Dengan menggunakan teknik classfull setiap subnet akan memiliki netmask /24 karena semua subnet memiliki host di bawah 256. Sehingga pembagian IP yang memungkinkan untuk topologi di atas adalah sebagai berikut.
+
+*gambar*
+
 #### B. Classless
 <b>1. VLSM (Variable Length Subnet Masking)</b>
+
 Inti utama dari penggunaan teknik VLSM adalah untuk mengefisienkan pembagian IP di dalam jaringan. Besar netmask disesuaikan dengan banyaknya komputer / host yang membutuhkan alamat IP. Berikut ini adalah cara menggunakan teknik VLSM<br>
 Dengan menggunakan topologi yang ada sebelumnya, hitung terlebih dahulu total alamat IP yang dibutuhkan:
+
     - A1 = 100 host
     - A2 = 2 host
     - A3 = 50 host
