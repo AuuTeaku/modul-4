@@ -128,7 +128,7 @@ Anggap kita memiliki topologi jaringan seperti pada gambar di atas. Kemudian ten
 
 Ada 8 subnet di dalam topologi. Dengan menggunakan teknik classfull setiap subnet akan memiliki netmask /24 karena semua subnet memiliki host di bawah 256. Sehingga pembagian IP yang memungkinkan untuk topologi di atas adalah sebagai berikut.
 
-*gambar*
+![1](/assets/hasil.PNG)
 
 #### B. Classless
 <b>1. VLSM (Variable Length Subnet Masking)</b>
