@@ -31,7 +31,7 @@ IP Address (Versi 4)
 - Alamat IP (yang panjangnya 32 bit itu) dibagi menjadi 4 oktet (masing-masing oktet berisi 8 bit) dipisahkan dengan tanda titik.
 
 ### Subnet
-*gambar subnet*
+![1](/assets/subnet.PNG)
     
 Apa yang dapat anda simpulkan dari tabel di atas?
 
@@ -60,15 +60,14 @@ Penyelesaian :
    
 #### Network ID
 Mencari Network ID (NID) :
-
-*gambar*
+![1](/assets/NID.PNG)
 
 #### Broadcast Address
-*gambar*
+![1](/assets/BID.PNG)
 
 #### Available Hosts
 Mencari Rentang Alamat IP:
-*gambar*
+![1](/assets/rentang.PNG)
 
 ### IP Publik dan IP Privat
 Alamat IP dibagi menjadi 2 jenis, yakni IP Publik dan IP Privat. Rentang IP Privat adalah:
@@ -80,7 +79,7 @@ Alamat IP dibagi menjadi 2 jenis, yakni IP Publik dan IP Privat. Rentang IP Priv
 Sedangkan rentang IP Publik selain rentang IP Privat di atas.
 
 ### Let’s Wrap and Warm Up!
-*gambar*
+![1](/assets/latihan.PNG)
     
 #### LATIHAN!
 Nah, sekarang coba kerjakan soal latihan di bawah ini dan silahkan diskusikan bersama asisten masing-masing.
@@ -121,11 +120,11 @@ Class C | /24 | 256
 
 Tabel di atas menunjukkan netmask setiap class dan jumlah komputer yang bisa digunakan. Sebagai contoh pembagian IP dengan menggunakan metode classfull adalah sebagai berikut.
 
-*gambar topologi*
+![1](/assets/top1.PNG)
 
 Anggap kita memiliki topologi jaringan seperti pada gambar di atas. Kemudian tentukan jumlah subnet yang ada di dalam topologi tersebut.
 
-*gambar topologi*
+![1](/assets/top2.PNG)
 
 Ada 8 subnet di dalam topologi. Dengan menggunakan teknik classfull setiap subnet akan memiliki netmask /24 karena semua subnet memiliki host di bawah 256. Sehingga pembagian IP yang memungkinkan untuk topologi di atas adalah sebagai berikut.
 
