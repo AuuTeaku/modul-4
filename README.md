@@ -194,22 +194,22 @@ Buka Cisco Packet Tracer, kita akan membuat topologi baru.
 
 #### 1) Membuat Topologi
 
-*gambar*
+![1](assets/topologi.PNG)
 
 Silahkan kalian Buat Topologi Diatas dengan Cisco Packet Tracer. Untuk Router, Switch dan PC kalian bisa lakukan drag and drop pada menu :
 
-*gambar*
+![1](assets/pilihan.PNG)
 
 #### 2) Subnetting
 Jika pada UML kalian membuka /etc/network/interfaces untuk setting interface pada setiap perangkat, pada CPT kalian bisa melakukannya pada Menu Config -> INTERFACE > “nama interface” (contoh: FastEthernet0/0), Lalu isikan IP Address dan Subnet Mask.
 
 Silahkan set Interface GEBANG yang mengarah ke NGAGEL dan NGINDEN dengan IP 192.168.0.9
 
-*gambar*
+![1](assets/gbg1.PNG)
 
 Setelah itu, MENUR silakan isi IP yang mengarah ke GEBANG dengan 192.168.0.10
 
-*gambar*
+![1](assets/menuratas.PNG)
 
 Setelah itu, MENUR silakan isi IP yang mengarah ke NGAGEL dan NGINDEN dengan 192.168.0.1
 
@@ -221,16 +221,16 @@ Dan terakhir isi IP pada NGAGEL dengan 192.168.0.2 dengan cara:
 - Pilih tab Desktop
 - Pilih IP Configuration
 
-*gambar*
+![1](assets/ngagel1.PNG)
 
-*gambar*
+![1](assets/ipconfngagel.PNG)
 
 Jika sebelumnya kalian bisa melakukan ping Dari GEBANG langsung ke NGAGEL, pada topologi ini kita tidak akan bisa melakukan tersebut. Hal ini dikarenakan GEBANG dan NGAGEL tidak berada pada Subnet yang sama, agar mereka bisa mengakases satu sama lain, maka diperlukan ROUTING.
 
 #### 3) Routing
 Untuk Melakukan Routing , kalian bisa lakukan pada Menu Config > Routing > Static, dan tambahkan Routingan seperti gambar dibawah ini pada GEBANG dan jangan lupa tekan tombol “Add”:
 
-*gambar*
+![1](assets/routing1.PNG)
 
 #### Penjelasan : 
 1. Network 192.168.0.0 adalah Network ID yang akan dihubungkan
@@ -255,7 +255,7 @@ Setelah itu, agar semua bisa berhubungan, lanjutkan static routing berikut :
         Network 0.0.0.0 Netmask 0.0.0.0 Next Hop 192.168.1.1
         
 #### Untuk Mengetesnya kalian bisa ping dari client ke ip tujuan atau menggunakan Tombol dengan Ikon di bagian kanan
-*gambar*
+![1](assets/menu.PNG)
 
 Sedangkan Untuk Routing pada UML kalian bisa menggunakan Syntax berikut:
 
