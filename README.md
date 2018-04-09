@@ -188,3 +188,19 @@ Dalam perkembangan dunia jaringan muncul banyak protokol routing yang sudah memu
 Beberapa protokol terkenal antara lain RIP, RIP versi 2, EIGRP, dan OSPF. Namun dalam modul ini tidak dijelaskan bagaimana mengkonfigurasikan jaringan dengan protokol tersebut, jika kalian ingin mengetahui lebih lanjut mengenai <b>Routing dinamis</b> kalian bisa mengambil kuliah <b>TAJ</b> pada semester 6 nanti.
 
 Yang dibahas di modul ini adalah <b>Routing static</b>, tipe routing ini mengharuskan administrator jaringan menambahkan rute(<b>route</b>) baru ke dalam tabel routing ketika ada tambahan subnet di dalam jaringannya. Konsep routing static sangat sederhana, daftar NID dan netmask yang ada serta tentukan gateway untuk menuju ke subnet tersebut. Untuk mencoba teknik routing static ini, kita akan menggunakan aplikasi <b>Cisco Packet Tracer</b> yang sudah diinstall sebelumnya.
+
+###PRAKTIK
+Buka Cisco Packet Tracer, kita akan membuat topologi baru.
+
+#### 1) Membuat Topologi
+
+*gambar*
+
+Silahkan kalian Buat Topologi Diatas dengan Cisco Packet Tracer. Untuk Router, Switch dan PC kalian bisa lakukan drag and drop pada menu :
+
+*gambar*
+
+#### 2) Subnetting
+Jika pada UML kalian membuka /etc/network/interfaces untuk setting interface pada setiap perangkat, pada CPT kalian bisa melakukannya pada Menu Config -> INTERFACE > “nama interface” (contoh: FastEthernet0/0), Lalu isikan IP Address dan Subnet Mask.
+
+Silahkan set Interface BAKSO yang mengarah ke MIE dan 
