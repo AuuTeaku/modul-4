@@ -203,4 +203,71 @@ Silahkan kalian Buat Topologi Diatas dengan Cisco Packet Tracer. Untuk Router, S
 #### 2) Subnetting
 Jika pada UML kalian membuka /etc/network/interfaces untuk setting interface pada setiap perangkat, pada CPT kalian bisa melakukannya pada Menu Config -> INTERFACE > “nama interface” (contoh: FastEthernet0/0), Lalu isikan IP Address dan Subnet Mask.
 
-Silahkan set Interface BAKSO yang mengarah ke MIE dan 
+Silahkan set Interface GEBANG yang mengarah ke NGAGEL dan NGINDEN dengan IP 192.168.0.9
+
+*gambar*
+
+Setelah itu, MENUR silakan isi IP yang mengarah ke GEBANG dengan 192.168.0.10
+
+*gambar*
+
+Setelah itu, MENUR silakan isi IP yang mengarah ke NGAGEL dan NGINDEN dengan 192.168.0.1
+
+*gambar*
+
+Dan terakhir isi IP pada NGAGEL dengan 192.168.0.2 dengan cara:
+
+- Masuk ke NGAGEL
+- Pilih tab Desktop
+- Pilih IP Configuration
+
+*gambar*
+
+*gambar*
+
+Jika sebelumnya kalian bisa melakukan ping Dari GEBANG langsung ke NGAGEL, pada topologi ini kita tidak akan bisa melakukan tersebut. Hal ini dikarenakan GEBANG dan NGAGEL tidak berada pada Subnet yang sama, agar mereka bisa mengakases satu sama lain, maka diperlukan ROUTING.
+
+#### 3) Routing
+Untuk Melakukan Routing , kalian bisa lakukan pada Menu Config > Routing > Static, dan tambahkan Routingan seperti gambar dibawah ini pada GEBANG dan jangan lupa tekan tombol “Add”:
+
+*gambar*
+
+#### Penjelasan : 
+1. Network 192.168.0.0 adalah Network ID yang akan dihubungkan
+1. Mask 255.255.255.248 adalah netmask dari subnet NGAGEL dan NGINDEN
+1. Next Hop 192.168.0.10 atau disebut dengan gateway, adalah IP yang akan dituju ketika ingin menuju subnet poin 1), yaitu interface pada MENUR yang mengarah ke GEBANG
+
+Setelah itu Barulah GEBANG dan NGAGEL bisa saling terhubung.
+
+Setelah itu, agar semua bisa berhubungan, lanjutkan static routing berikut :
+
+1. Pada ENDAS, lakukan routing :
+    
+        Network 10.151.77.120 Netmask 255.255.255.248 Next Hop 192.168.1.2
+        Network 0.0.0.0 Netmask 0.0.0.0 Next Hop 10.151.76.1
+
+1. Pada MENUR
+
+        Network 0.0.0.0 Netmask 0.0.0.0 Next Hop 192.168.0.9
+
+1. Pada BRATANG
+        
+        Network 0.0.0.0 Netmask 0.0.0.0 Next Hop 192.168.1.1
+        
+#### Untuk Mengetesnya kalian bisa ping dari client ke ip tujuan atau menggunakan Tombol dengan Ikon di bagian kanan
+*gambar*
+
+Sedangkan Untuk Routing pada UML kalian bisa menggunakan Syntax berikut:
+
+    # route add –net <NID subnet> netmask <netmask> gw <ip GW>
+
+Sementara untuk menampilkan isi dari tabel routing menggunakan perintah di bawah ini:
+    
+    # route –n
+    
+Pada akhirnya routing statis disesuaikan dengan daftar NID yang ada, semakin banyak NID yang ada di dalam topologi, semakin banyak administrator jaringan harus memasukkan data, kecuali dengan teknik pengelompokkan yang tepat.
+
+## LATIHAN!
+*gambar*
+
+Implementasikan subnetting dan routing topologi diatas pa]\da Cisco Packet Tracer dan UML menggunakan teknik subnetting yang berbeda! (Untuk UML, tiap subnet diwakili satu client/komputer saja)
