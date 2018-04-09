@@ -213,7 +213,7 @@ Setelah itu, MENUR silakan isi IP yang mengarah ke GEBANG dengan 192.168.0.10
 
 Setelah itu, MENUR silakan isi IP yang mengarah ke NGAGEL dan NGINDEN dengan 192.168.0.1
 
-*gambar*
+![1](assets/menurbawah.PNG)
 
 Dan terakhir isi IP pada NGAGEL dengan 192.168.0.2 dengan cara:
 
