@@ -268,6 +268,6 @@ Sementara untuk menampilkan isi dari tabel routing menggunakan perintah di bawah
 Pada akhirnya routing statis disesuaikan dengan daftar NID yang ada, semakin banyak NID yang ada di dalam topologi, semakin banyak administrator jaringan harus memasukkan data, kecuali dengan teknik pengelompokkan yang tepat.
 
 ## LATIHAN!
-*gambar*
+![1](assets/SOAL_LATIHAN_MODUL4.PNG)
 
 Implementasikan subnetting dan routing topologi diatas pa]\da Cisco Packet Tracer dan UML menggunakan teknik subnetting yang berbeda! (Untuk UML, tiap subnet diwakili satu client/komputer saja)
