@@ -270,4 +270,4 @@ Pada akhirnya routing statis disesuaikan dengan daftar NID yang ada, semakin ban
 ## LATIHAN!
 ![1](assets/SOAL_LATIHAN_MODUL4.PNG)
 
-Implementasikan subnetting dan routing topologi diatas pa]\da Cisco Packet Tracer dan UML menggunakan teknik subnetting yang berbeda! (Untuk UML, tiap subnet diwakili satu client/komputer saja)
+Implementasikan subnetting dan routing topologi diatas pada Cisco Packet Tracer dan UML menggunakan teknik subnetting yang berbeda! Contoh pada Cisco Packet Tracer menggunakan CIDR, pada UML menggunakan VLSM. Ataupun sebaliknya. (Untuk UML, tiap subnet diwakili satu client/komputer saja) 
