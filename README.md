@@ -189,7 +189,7 @@ Beberapa protokol terkenal antara lain RIP, RIP versi 2, EIGRP, dan OSPF. Namun 
 
 Yang dibahas di modul ini adalah <b>Routing static</b>, tipe routing ini mengharuskan administrator jaringan menambahkan rute(<b>route</b>) baru ke dalam tabel routing ketika ada tambahan subnet di dalam jaringannya. Konsep routing static sangat sederhana, daftar NID dan netmask yang ada serta tentukan gateway untuk menuju ke subnet tersebut. Untuk mencoba teknik routing static ini, kita akan menggunakan aplikasi <b>Cisco Packet Tracer</b> yang sudah diinstall sebelumnya.
 
-###PRAKTIK
+### PRAKTIK
 Buka Cisco Packet Tracer, kita akan membuat topologi baru.
 
 #### 1) Membuat Topologi
