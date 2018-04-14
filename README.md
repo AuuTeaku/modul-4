@@ -1,7 +1,7 @@
 # SUBNETTING & ROUTING
 
 ## A. PENGENALAN
-*gambar*
+![1](/assets/awal.PNG)
 
 Apa yang dimaksud dengan netmask, address, dan gateway dari gambar di atas?
 
@@ -136,16 +136,16 @@ Ada 8 subnet di dalam topologi. Dengan menggunakan teknik classfull setiap subne
 Inti utama dari penggunaan teknik VLSM adalah untuk mengefisienkan pembagian IP di dalam jaringan. Besar netmask disesuaikan dengan banyaknya komputer / host yang membutuhkan alamat IP. Berikut ini adalah cara menggunakan teknik VLSM<br>
 Dengan menggunakan topologi yang ada sebelumnya, hitung terlebih dahulu total alamat IP yang dibutuhkan:
 
-    - A1 = 100 host
+    - A1 = 101 host
     - A2 = 2 host
-    - A3 = 50 host
+    - A3 = 51 host
     - A4 = 2 host
     - A5 = 2 host
     - A6 = 2 host
-    - A7 = 10 host
-    - A8 = 20 host
+    - A7 = 11 host
+    - A8 = 21 host
 
-Total komputer / host yang ada di dalam topologi adalah 188. Oleh karena itu digunakan netmask /24 karena dengan netmask tersebut, jumlah 188 bisa tertampung semua. Selanjutnya subnet besar yang dibentuk memiliki NID 192.168.1.0 dengan netmask /24.
+Total komputer / host yang ada di dalam topologi adalah 192. Oleh karena itu digunakan netmask /24 karena dengan netmask tersebut, jumlah 188 bisa tertampung semua. Selanjutnya subnet besar yang dibentuk memiliki NID 192.168.1.0 dengan netmask /24.
 
 Setelah itu lakukan subnetting dengan menggunakan pohon pembagian IP sesuai dengan pohon dibawah ini.
 ![1](/assets/PohonVLSM.PNG)
