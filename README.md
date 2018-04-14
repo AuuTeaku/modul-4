@@ -16,11 +16,13 @@ gateway | Alamat IP pintu keluar menuju jaringan lain, biasanya diisi alamat IP 
 
 <b>Mengapa Perlu Subnetting?</b>
 
-Sebagaimana rumah yang memiliki alamat masing-masing (unique), setiap komputer dan device yang terhubung dengan jaringan harus memiliki alamat, yaitu berupa IP Address. Sebagai permisalan, wilayah di Indonesia perlu dibagi-bagi menjadi kota, kecamatan, dan desa. Mengapa demikian? Dengan alasan yang semisal, jaringan juga perlu dibagi menjadi subnet (sub-network).
+Sebagai permisalan, wilayah di Indonesia perlu dibagi-bagi menjadi kota, kecamatan, dan desa. Tujuannya untuk mempermudah pemerintah dalam mengatur setiap kebijakan agar sesuai dengan tempatnya, sama dengan jaringan yang akan kita buat. Kita perlu membaginya menjadi bagian kecil agar lebih mudah dalam hal
+pengaturan dan perawatan. Manfaat yang kita peroleh darimelakukan subnetting, seperti meningkatkan efisiensi routing, meningkatkan keamanan karena setiap subnet memiliki pengawasan/kebijakan sendiri, dan mengurangi ukuran dari broadcast domain.
+
 
 <b>Mengapa Perlu Routing?</b>
 
-Sebagai permisalan, ketika Anda ingin mengantar surat, Anda perlu mencantumkan alamat yang dituju pada surat itu sendiri. Kemudian Anda kirim ke kantor pos, lalu kantor pos akan mengirimkan ke alamat yang dituju. Bagaimana kantor pos mengirim surat tersebut?
+Sebagai permisalan, ketika Anda ingin mengantar surat anda perlu mencantumkan alamat yang dituju pada surat itu sendiri. Kemudian Anda kirim ke kantor pos, lalu kantor pos akan mengirimkan ke alamat yang dituju. Bagaimana kantor pos mengirim surat tersebut?
 Tentu pak pos perlu mengetahui rute perjalan agar surat sampai ke tujuan, seperti itulah routing itu. Untuk mencapai IP Address, perlu diketahui rute untuk menuju IP Address yang dimaksud.
 
 ### IP ADDRESS
