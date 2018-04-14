@@ -95,7 +95,6 @@ Nah, sekarang coba kerjakan soal latihan di bawah ini dan silahkan diskusikan be
    
 ## B. SUBNETTING
 ### Pengertian
-*gambar*
 
 <b>Subnet</b> adalah suatu sub jaringan dari jaringan yang lebih besar. Subnet diperlukan sebagai penanda suatu jaringan tertentu. Dengan adanya subnet, kita dapat melakukan manajemen suatu jaringan dengan lebih baik.
 
