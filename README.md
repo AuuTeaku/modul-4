@@ -17,7 +17,7 @@ gateway | Alamat IP pintu keluar menuju jaringan lain, biasanya diisi alamat IP 
 <b>Mengapa Perlu Subnetting?</b>
 
 Sebagai permisalan, wilayah di Indonesia perlu dibagi-bagi menjadi kota, kecamatan, dan desa. Tujuannya untuk mempermudah pemerintah dalam mengatur setiap kebijakan agar sesuai dengan tempatnya, sama dengan jaringan yang akan kita buat. Kita perlu membaginya menjadi bagian kecil agar lebih mudah dalam hal
-pengaturan dan perawatan. Manfaat yang kita peroleh darimelakukan subnetting, seperti meningkatkan efisiensi routing, meningkatkan keamanan karena setiap subnet memiliki pengawasan/kebijakan sendiri, dan mengurangi ukuran dari broadcast domain.
+pengaturan dan perawatan. Manfaat yang kita peroleh dari melakukan subnetting, seperti meningkatkan efisiensi routing, meningkatkan keamanan karena setiap subnet memiliki pengawasan/kebijakan sendiri, dan mengurangi ukuran dari broadcast domain.
 
 
 <b>Mengapa Perlu Routing?</b>
