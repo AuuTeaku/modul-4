@@ -95,7 +95,6 @@ Nah, sekarang coba kerjakan soal latihan di bawah ini dan silahkan diskusikan be
    
 ## B. SUBNETTING
 ### Pengertian
-*gambar*
 
 <b>Subnet</b> adalah suatu sub jaringan dari jaringan yang lebih besar. Subnet diperlukan sebagai penanda suatu jaringan tertentu. Dengan adanya subnet, kita dapat melakukan manajemen suatu jaringan dengan lebih baik.
 
@@ -243,7 +242,7 @@ Setelah itu Barulah GEBANG dan NGAGEL bisa saling terhubung.
 
 Setelah itu, agar semua bisa berhubungan, lanjutkan static routing berikut :
 
-1. Pada ENDAS, lakukan routing :
+1. Pada GEBANG, lakukan routing :
     
         Network 10.151.77.120 Netmask 255.255.255.248 Next Hop 192.168.1.2
         Network 0.0.0.0 Netmask 0.0.0.0 Next Hop 10.151.76.1
