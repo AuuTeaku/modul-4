@@ -3,8 +3,6 @@
 ## A. PENGENALAN
 ![1](/assets/awal.PNG)
 
-Apa yang dimaksud dengan netmask, address, dan gateway dari gambar di atas?
-
 #### Istilah
 Istilah | Penjelasan
 --------|-----------
@@ -146,7 +144,7 @@ Dengan menggunakan topologi yang ada sebelumnya, hitung terlebih dahulu total al
     - A7 = 11 host
     - A8 = 21 host
 
-Total komputer / host yang ada di dalam topologi adalah 192. Oleh karena itu digunakan netmask /24 karena dengan netmask tersebut, jumlah 188 bisa tertampung semua. Selanjutnya subnet besar yang dibentuk memiliki NID 192.168.1.0 dengan netmask /24.
+Total komputer / host yang ada di dalam topologi adalah 192. Oleh karena itu digunakan netmask /24 karena dengan netmask tersebut, jumlah 192 bisa tertampung semua. Selanjutnya subnet besar yang dibentuk memiliki NID 192.168.1.0 dengan netmask /24.
 
 Setelah itu lakukan subnetting dengan menggunakan pohon pembagian IP sesuai dengan pohon dibawah ini.
 ![1](/assets/PohonVLSM.PNG)
