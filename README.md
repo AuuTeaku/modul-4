@@ -32,8 +32,6 @@ IP Address (Versi 4)
 
 ### Subnet
 ![1](/assets/subnet.PNG)
-    
-Apa yang dapat anda simpulkan dari tabel di atas?
 
 ### Network ID, Broadcast Address, dan Available Hosts
 Jika suatu PC memiliki alamat 10.151.36.5/24, maka informasi yang dapat digali dari IP tersebut adalah:
